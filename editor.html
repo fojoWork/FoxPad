@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
+    <title>FoxPad</title>
 </head>
 <body>
-    <div id="notepad">
-        <h1>untitled</h1>
-        <input type="text" id="textBox" style="margin-bottom: 10px;"><br>
-        <button id="textSave" onclick="Save()">Save</button>
-        <button id="Upload">Upload</button>
-        <button id="textClear">Clear</button>
-        <script src="/save.js"></script>
-    </div>
+    <main>
+        <h1>FoxPad</h1>
+        <button onclick="save()">Save</button>
+        <button>Clear</button><br>
+        <input type="text" id="nameNote" style="width: 200px;">
+        <script src="/saveNote.js"></script>
+    </main>
 
-    <div id="displayed-text">
-        <p id="para"></p>
-    </div>
-
-    <div id="savedNotes">
-        <p id="saved1"></p>
-    </div>
+    <textarea name="textbox" id="textbox" rows="40" cols="60"></textarea><br>
+    <a href="/vault.html"><button>View Saved Notes</button></a>
+    <script src="/saveNote.js"></script>
 </body>
 </html>
